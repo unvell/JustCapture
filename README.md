@@ -4,7 +4,7 @@ Screen snapshot capture tool written in C# for Windows
 
 # Features
 
-On-screen range select and capture
+Free range select and capture on screen
 
 ![range select and capture](Snapshots/free_region_en.png)
 
@@ -30,4 +30,4 @@ After run this application, a camera icon will be displayed on Windows notificat
 
 # License
 
-MIT license
+MIT License
