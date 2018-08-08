@@ -1,0 +1,580 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="all_supported_files" xml:space="preserve">
+    <value>全ての画像ファイル</value>
+  </data>
+  <data name="already_running" xml:space="preserve">
+    <value>{0}はすでに起動されています。画面右下の通知領域を確認してください。</value>
+  </data>
+  <data name="arrow" xml:space="preserve">
+    <value>矢印</value>
+  </data>
+  <data name="btn_about" xml:space="preserve">
+    <value>製品について(&amp;A)...</value>
+  </data>
+  <data name="btn_cancel" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="btn_capture_free_region" xml:space="preserve">
+    <value>範囲を選択してコピーする(&amp;R)</value>
+  </data>
+  <data name="btn_capture_window" xml:space="preserve">
+    <value>ウィンドウを選択してコピーする(&amp;W)</value>
+  </data>
+  <data name="btn_check_for_updates" xml:space="preserve">
+    <value>更新を確認する(&amp;C)</value>
+  </data>
+  <data name="btn_clip_image" xml:space="preserve">
+    <value>選択範囲を切り取る</value>
+  </data>
+  <data name="btn_close" xml:space="preserve">
+    <value>閉じる(&amp;C)</value>
+  </data>
+  <data name="btn_copy" xml:space="preserve">
+    <value>コピー(&amp;C)</value>
+  </data>
+  <data name="btn_cut" xml:space="preserve">
+    <value>切り取り(&amp;U)</value>
+  </data>
+  <data name="btn_deselect" xml:space="preserve">
+    <value>選択範囲を取り消す(&amp;D)</value>
+  </data>
+  <data name="btn_draw_arrow" xml:space="preserve">
+    <value>矢印を追加(&amp;A)</value>
+  </data>
+  <data name="btn_draw_line" xml:space="preserve">
+    <value>線を追加(&amp;L)</value>
+  </data>
+  <data name="btn_draw_rectangle" xml:space="preserve">
+    <value>四角形を追加(&amp;R)</value>
+  </data>
+  <data name="btn_edit" xml:space="preserve">
+    <value>編集(&amp;E)</value>
+  </data>
+  <data name="btn_exit" xml:space="preserve">
+    <value>終了(&amp;X)</value>
+  </data>
+  <data name="btn_file" xml:space="preserve">
+    <value>ファイル(&amp;F)</value>
+  </data>
+  <data name="full_screen" xml:space="preserve">
+    <value>全画面</value>
+  </data>
+  <data name="btn_help" xml:space="preserve">
+    <value>ヘルプ(&amp;H)</value>
+  </data>
+  <data name="btn_homepage" xml:space="preserve">
+    <value>製品ホームページ(&amp;H)...</value>
+  </data>
+  <data name="btn_image" xml:space="preserve">
+    <value>画像(&amp;I)</value>
+  </data>
+  <data name="btn_image_editor" xml:space="preserve">
+    <value>画像エディタ(&amp;E)...</value>
+  </data>
+  <data name="btn_new" xml:space="preserve">
+    <value>新規画像(&amp;N)</value>
+  </data>
+  <data name="btn_next" xml:space="preserve">
+    <value>次へ(&amp;N)</value>
+  </data>
+  <data name="btn_ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="btn_open" xml:space="preserve">
+    <value>開く(&amp;O)...</value>
+  </data>
+  <data name="btn_paste" xml:space="preserve">
+    <value>貼り付け(&amp;P)</value>
+  </data>
+  <data name="btn_redo" xml:space="preserve">
+    <value>やり直し(&amp;R)</value>
+  </data>
+  <data name="btn_reset_region" xml:space="preserve">
+    <value>やり直す(&amp;R)</value>
+  </data>
+  <data name="btn_run_on_windows_starts" xml:space="preserve">
+    <value>Windows の起動時に自動的にJustCaptureを実行する(&amp;R)</value>
+  </data>
+  <data name="btn_save" xml:space="preserve">
+    <value>保存(&amp;S)</value>
+  </data>
+  <data name="btn_save_last_picture" xml:space="preserve">
+    <value>最後にコピーした画像を保存する(&amp;S)...</value>
+  </data>
+  <data name="btn_select" xml:space="preserve">
+    <value>範囲を選択する(&amp;S)</value>
+  </data>
+  <data name="btn_select_all" xml:space="preserve">
+    <value>全てを選択する(&amp;A)</value>
+  </data>
+  <data name="btn_select_window" xml:space="preserve">
+    <value>ウィンドウを選択(&amp;W)</value>
+  </data>
+  <data name="btn_settings" xml:space="preserve">
+    <value>設定(&amp;S)...</value>
+  </data>
+  <data name="btn_shadow" xml:space="preserve">
+    <value>影を付ける(&amp;S)</value>
+  </data>
+  <data name="btn_show_toolbar" xml:space="preserve">
+    <value>ツールバーを表示する(&amp;T)</value>
+  </data>
+  <data name="btn_show_toolbar_in_capture_tool" xml:space="preserve">
+    <value>画面コピーのツールバーを表示する(&amp;T)</value>
+  </data>
+  <data name="btn_skip" xml:space="preserve">
+    <value>スキップ(&amp;S)</value>
+  </data>
+  <data name="btn_undo" xml:space="preserve">
+    <value>元に戻す(&amp;U)</value>
+  </data>
+  <data name="cancel" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="capture_tool" xml:space="preserve">
+    <value>コピーツール</value>
+  </data>
+  <data name="copy" xml:space="preserve">
+    <value>コピー</value>
+  </data>
+  <data name="cut" xml:space="preserve">
+    <value>切り取り</value>
+  </data>
+  <data name="btn_do_not_show_again" xml:space="preserve">
+    <value>次回から表示しない(&amp;D)</value>
+  </data>
+  <data name="edit" xml:space="preserve">
+    <value>編集</value>
+  </data>
+  <data name="general" xml:space="preserve">
+    <value>全般</value>
+  </data>
+  <data name="hotkeys_custom_tip" xml:space="preserve">
+    <value>ホットキーで起動したい動作にチェックを付けてください。ホットキーを変更したい場合、枠内でキーの組み合わせを押してください。</value>
+  </data>
+  <data name="incorrect_format" xml:space="preserve">
+    <value>画像を読み取ることができません。ファイルフォーマットを確認してください。</value>
+  </data>
+  <data name="btn_inner_line" xml:space="preserve">
+    <value>内枠(&amp;I):</value>
+  </data>
+  <data name="line" xml:space="preserve">
+    <value>線</value>
+  </data>
+  <data name="new_image" xml:space="preserve">
+    <value>新規画像</value>
+  </data>
+  <data name="new_version_notify" xml:space="preserve">
+    <value>{0} {1} がリリースされました！
+以下のURLをクリックしてダウンロードしてください。</value>
+  </data>
+  <data name="not_enough_permission" xml:space="preserve">
+    <value>操作を行うために必要な権限がありません。管理者としてJustCaptureを実行してください。</value>
+  </data>
+  <data name="no_new_version" xml:space="preserve">
+    <value>使用中の {0} が最新版です。</value>
+  </data>
+  <data name="no_picture_captured" xml:space="preserve">
+    <value>画像を先にコピーしてください。</value>
+  </data>
+  <data name="open_image" xml:space="preserve">
+    <value>画像を開く</value>
+  </data>
+  <data name="btn_outer_line" xml:space="preserve">
+    <value>外枠(&amp;O):</value>
+  </data>
+  <data name="paste" xml:space="preserve">
+    <value>貼り付け</value>
+  </data>
+  <data name="rectangle" xml:space="preserve">
+    <value>四角形</value>
+  </data>
+  <data name="redo" xml:space="preserve">
+    <value>やり直し</value>
+  </data>
+  <data name="region_selection" xml:space="preserve">
+    <value>選択範囲</value>
+  </data>
+  <data name="save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="save_image" xml:space="preserve">
+    <value>画像を保存</value>
+  </data>
+  <data name="select_region" xml:space="preserve">
+    <value>範囲を選択する</value>
+  </data>
+  <data name="settings" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="shortcut_keys" xml:space="preserve">
+    <value>ホットキー</value>
+  </data>
+  <data name="snapshot" xml:space="preserve">
+    <value>スナップショット</value>
+  </data>
+  <data name="start_up" xml:space="preserve">
+    <value>起動</value>
+  </data>
+  <data name="tips_hotkey" xml:space="preserve">
+    <value>ホットキーを利用するといつでも画面をコピーすることができます。設定画面で動作毎にホットキーを設定することができます。</value>
+  </data>
+  <data name="tips_select_window" xml:space="preserve">
+    <value>現在表示中のウィンドウを選択し、そのウィンドウを丸ごとコピーすることができます。</value>
+  </data>
+  <data name="tips_start_slides" xml:space="preserve">
+    <value>いま {0} の機能紹介を見ますか?</value>
+  </data>
+  <data name="tips_tray" xml:space="preserve">
+    <value>JustCapture 起動時に画面右下の通知領域にアイコンを表示します。アイコン上で右クリックするとメニューが表示されます。</value>
+  </data>
+  <data name="undo" xml:space="preserve">
+    <value>元に戻す</value>
+  </data>
+  <data name="btn_thumb" xml:space="preserve">
+    <value>ハンドル(&amp;H):</value>
+  </data>
+  <data name="btn_language" xml:space="preserve">
+    <value>表示言語(&amp;L):</value>
+  </data>
+  <data name="select_window" xml:space="preserve">
+    <value>ウィンドウを選択</value>
+  </data>
+  <data name="btn_full_screen" xml:space="preserve">
+    <value>全画面(&amp;F)</value>
+  </data>
+  <data name="reset_region" xml:space="preserve">
+    <value>やり直す</value>
+  </data>
+  <data name="btn_capture" xml:space="preserve">
+    <value>コピー(&amp;S)</value>
+  </data>
+  <data name="capture" xml:space="preserve">
+    <value>コピー</value>
+  </data>
+  <data name="action_capture_and_edit_free_region" xml:space="preserve">
+    <value>画面の一部をコピーして編集する</value>
+  </data>
+  <data name="action_capture_and_save_free_region" xml:space="preserve">
+    <value>画面の一部をコピーして保存する</value>
+  </data>
+  <data name="action_free_region" xml:space="preserve">
+    <value>画面の一部を選択してコピーする</value>
+  </data>
+  <data name="action_image_editor" xml:space="preserve">
+    <value>画像エディタ</value>
+  </data>
+  <data name="action_mail_last_captured_picture" xml:space="preserve">
+    <value>最後にコピーした画像を電子メールで送信する</value>
+  </data>
+  <data name="action_save_last_captured_picture" xml:space="preserve">
+    <value>最後にコピーした画像を保存する</value>
+  </data>
+  <data name="action_select_window" xml:space="preserve">
+    <value>表示中のウィンドウを選択してコピーする</value>
+  </data>
+  <data name="captured_image" xml:space="preserve">
+    <value>コピーした画像</value>
+  </data>
+  <data name="check_for_updates" xml:space="preserve">
+    <value>更新確認</value>
+  </data>
+  <data name="new_version_available" xml:space="preserve">
+    <value>新しいバージョンがあります</value>
+  </data>
+  <data name="btn_tools" xml:space="preserve">
+    <value>ツール(&amp;T)</value>
+  </data>
+  <data name="image_editor" xml:space="preserve">
+    <value>画像エディタ</value>
+  </data>
+  <data name="btn_capture_to_clipboard" xml:space="preserve">
+    <value>コピー</value>
+  </data>
+  <data name="btn_more" xml:space="preserve">
+    <value>詳細...</value>
+  </data>
+  <data name="no_color" xml:space="preserve">
+    <value>色なし</value>
+  </data>
+  <data name="btn_capture_current_full_screen" xml:space="preserve">
+    <value>全画面をコピーする(&amp;F)</value>
+  </data>
+  <data name="btn_start_tips" xml:space="preserve">
+    <value>ヒント(&amp;T)...</value>
+  </data>
+  <data name="btn_enable_check_for_updates" xml:space="preserve">
+    <value>起動時に新しいバージョンを確認する（推薦）</value>
+  </data>
+  <data name="btn_restore_last_region" xml:space="preserve">
+    <value>前回の選択範囲を記憶する(&amp;R)</value>
+  </data>
+  <data name="btn_add_number" xml:space="preserve">
+    <value>連番を追加(&amp;N)</value>
+  </data>
+  <data name="btn_draw_ellipse" xml:space="preserve">
+    <value>円形を追加(&amp;E)</value>
+  </data>
+  <data name="show_shadow" xml:space="preserve">
+    <value>影を付ける</value>
+  </data>
+  <data name="btn_reset_number" xml:space="preserve">
+    <value>連番を１に戻す(&amp;W)</value>
+  </data>
+  <data name="reset_number" xml:space="preserve">
+    <value>連番を１に戻す</value>
+  </data>
+  <data name="tips_changenumber" xml:space="preserve">
+    <value>番号が自動的に一つずつ大きくなります。表示する番号を変えたい場合、０－９の数字キーを押してください。または１に戻したい場合、ツールバーの「連番を１に戻す」ボタンを押してください。</value>
+  </data>
+  <data name="action_capture_full_screen_into_clipboard" xml:space="preserve">
+    <value>全画面をコピーしてクリップボードに保存する</value>
+  </data>
+  <data name="capture_free_region" xml:space="preserve">
+    <value>範囲を選択してコピーする</value>
+  </data>
+  <data name="capture_full_screen" xml:space="preserve">
+    <value>全画面をコピーする</value>
+  </data>
+  <data name="edit_text" xml:space="preserve">
+    <value>文字編集</value>
+  </data>
+  <data name="btn_resize_image" xml:space="preserve">
+    <value>画像サイズを設定(&amp;R)...</value>
+  </data>
+  <data name="resize_image" xml:space="preserve">
+    <value>画像サイズ設定</value>
+  </data>
+  <data name="rotate_90ccw" xml:space="preserve">
+    <value>左回転90度</value>
+  </data>
+  <data name="rotate_90cw" xml:space="preserve">
+    <value>右回転90度</value>
+  </data>
+  <data name="lab_start_operation" xml:space="preserve">
+    <value>JustCaptureの起動時(&amp;O):</value>
+  </data>
+  <data name="so_image_editor" xml:space="preserve">
+    <value>画像エディタを起動する</value>
+  </data>
+  <data name="so_start_capture" xml:space="preserve">
+    <value>画面キャプチャーを動作する</value>
+  </data>
+  <data name="so_tray" xml:space="preserve">
+    <value>バックグラウンドで実行する（システム通知領域）</value>
+  </data>
+  <data name="btn_scale" xml:space="preserve">
+    <value>スケール(&amp;S)...</value>
+  </data>
+  <data name="scale" xml:space="preserve">
+    <value>スケール</value>
+  </data>
+  <data name="save_changes_confirm" xml:space="preserve">
+    <value>[{0}]の変更を保存しますか?</value>
+  </data>
+  <data name="btn_save_as" xml:space="preserve">
+    <value>名前を付けて保存(&amp;A)...</value>
+  </data>
+  <data name="save_as" xml:space="preserve">
+    <value>名前を付けて保存</value>
+  </data>
+  <data name="generic" xml:space="preserve">
+    <value>全般</value>
+  </data>
+  <data name="lab_unit" xml:space="preserve">
+    <value>単位(&amp;U):</value>
+  </data>
+  <data name="percent" xml:space="preserve">
+    <value>パーセント</value>
+  </data>
+  <data name="pixel" xml:space="preserve">
+    <value>ピクセル</value>
+  </data>
+  <data name="btn_lock_aspect_ratio" xml:space="preserve">
+    <value>サイズの比率を保持する</value>
+  </data>
+  <data name="lab_height" xml:space="preserve">
+    <value>高さ(&amp;H):</value>
+  </data>
+  <data name="lab_width" xml:space="preserve">
+    <value>幅(&amp;W):</value>
+  </data>
+  <data name="scale_image" xml:space="preserve">
+    <value>画像をスケール</value>
+  </data>
+  <data name="size" xml:space="preserve">
+    <value>サイズ</value>
+  </data>
+  <data name="btn_status_Bar" xml:space="preserve">
+    <value>ステータスバー(&amp;S)</value>
+  </data>
+  <data name="btn_toolbar" xml:space="preserve">
+    <value>ツールバー(&amp;T)</value>
+  </data>
+  <data name="btn_view" xml:space="preserve">
+    <value>表示(&amp;V)</value>
+  </data>
+  <data name="chk_show_coordinate_info" xml:space="preserve">
+    <value>座標情報を表示(&amp;C)</value>
+  </data>
+  <data name="view" xml:space="preserve">
+    <value>表示</value>
+  </data>
+  <data name="untitled" xml:space="preserve">
+    <value>無題</value>
+  </data>
+  <data name="btn_add_text" xml:space="preserve">
+    <value>テキストを追加(&amp;T)</value>
+  </data>
+  <data name="lab_magnifier_scale" xml:space="preserve">
+    <value>拡大鏡の倍率(&amp;M)</value>
+  </data>
+  <data name="lab_no_magnifier_scale" xml:space="preserve">
+    <value>無効化</value>
+  </data>
+  <data name="bold" xml:space="preserve">
+    <value>太字</value>
+  </data>
+  <data name="italic" xml:space="preserve">
+    <value>斜体</value>
+  </data>
+  <data name="strikethrough" xml:space="preserve">
+    <value>取り消し線</value>
+  </data>
+  <data name="text_larger" xml:space="preserve">
+    <value>フォントを拡大</value>
+  </data>
+  <data name="text_smaller" xml:space="preserve">
+    <value>フォントを縮小</value>
+  </data>
+  <data name="underline" xml:space="preserve">
+    <value>下線</value>
+  </data>
+  <data name="btn_print" xml:space="preserve">
+    <value>印刷(&amp;P)</value>
+  </data>
+  <data name="print" xml:space="preserve">
+    <value>印刷</value>
+  </data>
+  <data name="btn_print_last_picture" xml:space="preserve">
+    <value>最後にコピーした画像を印刷する(&amp;P)</value>
+  </data>
+</root>

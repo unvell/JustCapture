@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FF5EFA70-6FBD-4595-9F6A-903B52B766E4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>unvell.JustCapture</RootNamespace>
+    <AssemblyName>JustCapture</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>justcapture.ico</ApplicationIcon>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CaptureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CaptureForm.designer.cs">
+      <DependentUpon>CaptureForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\FontToolkit.cs" />
+    <Compile Include="Common\Logger.cs" />
+    <Compile Include="Common\ResourcePoolManager.cs" />
+    <Compile Include="Editor\ScaleImageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editor\ScaleImageForm.Designer.cs">
+      <DependentUpon>ScaleImageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editor\EditTextForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editor\EditTextForm.Designer.cs">
+      <DependentUpon>EditTextForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editor\ImageSizeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editor\ImageSizeForm.Designer.cs">
+      <DependentUpon>ImageSizeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NumericRangeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NumericRangeForm.Designer.cs">
+      <DependentUpon>NumericRangeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductInfo.cs" />
+    <Compile Include="UIControls\ColorComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIControls\ColorPickPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIControls\ColorPickToolStripDropPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIControls\ColoredShapeToolStripItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\GraphicsToolkit.cs" />
+    <Compile Include="Common\SingleApplication.cs" />
+    <Compile Include="Common\Win32.cs" />
+    <Compile Include="Configuration.cs" />
+    <Compile Include="Editor\EditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editor\EditorForm.Designer.cs">
+      <DependentUpon>EditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editor\EditorActions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Toolkits\FileToolkit.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UIControls\FontToolStripDropDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CaptureForm.resx">
+      <DependentUpon>CaptureForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editor\ScaleImageForm.resx">
+      <DependentUpon>ScaleImageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editor\EditorForm.resx">
+      <DependentUpon>EditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editor\EditTextForm.resx">
+      <DependentUpon>EditTextForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editor\ImageSizeForm.resx">
+      <DependentUpon>ImageSizeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumericRangeForm.resx">
+      <DependentUpon>NumericRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingForm.resx">
+      <DependentUpon>SettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipsForm.resx">
+      <DependentUpon>TipsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Common\RangeHandlerEdit.cs" />
+    <Compile Include="Toolkits\RegistryToolkit.cs" />
+    <Compile Include="SettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingForm.Designer.cs">
+      <DependentUpon>SettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShortcutAction.cs" />
+    <Compile Include="Toolkits\ShortcutKeyToolkit.cs" />
+    <Compile Include="TipsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipsForm.designer.cs">
+      <DependentUpon>TipsForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Editor\Resources\addnum2.cur" />
+    <Content Include="justcapture.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="justcapture16.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Editor\Resources\SmartScan.cur" />
+    <Content Include="SmartScan.cur" />
+    <None Include="Editor\Resources\SetHotSpotTool_221_32.bmp" />
+    <None Include="Editor\Resources\text.png" />
+    <None Include="Editor\Resources\saveHS1.png" />
+    <None Include="Editor\Resources\SaveAsWebPageHS.png" />
+    <None Include="Editor\Resources\stock_position_size.png" />
+    <None Include="Editor\Resources\underlinee.png" />
+    <None Include="Editor\Resources\strikethrough.png" />
+    <None Include="Editor\Resources\add_number.png" />
+    <Content Include="Editor\Resources\addnum.cur" />
+    <None Include="Editor\Resources\bold.png" />
+    <None Include="Editor\Resources\font_larger.png" />
+    <None Include="Editor\Resources\font_smaller.png" />
+    <None Include="Editor\Resources\italic.png" />
+    <None Include="Editor\Resources\image_resize.png" />
+    <None Include="Editor\Resources\object_rotate_right.png" />
+    <None Include="Editor\Resources\object_rotate_left.png" />
+    <None Include="Editor\Resources\layer_resize_actual.png" />
+    <None Include="Editor\Resources\PrintHS.png" />
+    <Content Include="Editor\Resources\reset_number.png" />
+    <None Include="Editor\Resources\tips_big.png" />
+    <None Include="Editor\Resources\tips.png" />
+    <None Include="Editor\Resources\unvell_small_logo.png" />
+    <None Include="Editor\Resources\select_full_screen.png" />
+    <None Include="Editor\Resources\Control_ToolBar.bmp" />
+    <None Include="Editor\Resources\cancel_region.png" />
+    <None Include="Editor\Resources\select_window.png" />
+    <None Include="Editor\Resources\small_close.png" />
+    <None Include="Editor\Resources\camera.png" />
+    <None Include="Editor\Resources\DeleteHS.png" />
+    <None Include="Editor\Resources\OptionsHS.png" />
+    <None Include="Editor\Resources\clipboard.bmp" />
+    <None Include="Editor\Resources\unvell_logo_small.png" />
+    <None Include="Editor\Resources\single_arrow.png" />
+    <None Include="Editor\Resources\line.png" />
+    <None Include="Editor\Resources\capture_region.png" />
+    <None Include="Editor\Resources\range_clip.png" />
+    <None Include="Editor\Resources\range.png" />
+    <None Include="Editor\Resources\shadow.png" />
+    <None Include="Editor\Resources\ColorHS.png" />
+    <None Include="Editor\Resources\InsertPictureHS.png" />
+    <None Include="Editor\Resources\WarningHS.png" />
+    <None Include="Editor\Resources\keyboard.png" />
+    <None Include="Editor\Resources\NewDocumentHS.png" />
+    <None Include="Editor\Resources\Edit_UndoHS.png" />
+    <None Include="Editor\Resources\Edit_RedoHS.png" />
+    <None Include="Editor\Resources\CutHS.png" />
+    <None Include="Editor\Resources\PasteHS.png" />
+    <None Include="Editor\Resources\CopyHS.png" />
+    <None Include="Editor\Resources\openHS.png" />
+    <None Include="Editor\Resources\saveHS.png" />
+    <None Include="Editor\Resources\roundrect.png" />
+    <None Include="Editor\Resources\rect.png" />
+    <None Include="Editor\Resources\eillpse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ResourceLib\ResourceLib.csproj">
+      <Project>{67B215D4-B741-4EB5-8E55-A36D49C9C082}</Project>
+      <Name>ResourceLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

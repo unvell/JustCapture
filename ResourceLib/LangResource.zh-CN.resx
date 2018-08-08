@@ -1,0 +1,579 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="all_supported_files" xml:space="preserve">
+    <value>全部的图片文件</value>
+  </data>
+  <data name="already_running" xml:space="preserve">
+    <value>{0}已经启动，请查看系统托盘。</value>
+  </data>
+  <data name="arrow" xml:space="preserve">
+    <value>箭头</value>
+  </data>
+  <data name="btn_about" xml:space="preserve">
+    <value>关于(&amp;A)...</value>
+  </data>
+  <data name="btn_cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="btn_capture_free_region" xml:space="preserve">
+    <value>自由范围快照(&amp;R)</value>
+  </data>
+  <data name="btn_capture_window" xml:space="preserve">
+    <value>选择窗口快照(&amp;W)</value>
+  </data>
+  <data name="btn_check_for_updates" xml:space="preserve">
+    <value>检查程序更新(&amp;C)</value>
+  </data>
+  <data name="btn_clip_image" xml:space="preserve">
+    <value>剪切选择的范围</value>
+  </data>
+  <data name="btn_close" xml:space="preserve">
+    <value>关闭(&amp;C)</value>
+  </data>
+  <data name="btn_copy" xml:space="preserve">
+    <value>复制(&amp;C)</value>
+  </data>
+  <data name="btn_cut" xml:space="preserve">
+    <value>剪切(&amp;U)</value>
+  </data>
+  <data name="btn_deselect" xml:space="preserve">
+    <value>取消选择范围(&amp;D)</value>
+  </data>
+  <data name="btn_draw_arrow" xml:space="preserve">
+    <value>添加箭头(&amp;A)</value>
+  </data>
+  <data name="btn_draw_line" xml:space="preserve">
+    <value>添加线(&amp;L)</value>
+  </data>
+  <data name="btn_draw_rectangle" xml:space="preserve">
+    <value>添加长方形(&amp;R)</value>
+  </data>
+  <data name="btn_edit" xml:space="preserve">
+    <value>编辑(&amp;E)</value>
+  </data>
+  <data name="btn_exit" xml:space="preserve">
+    <value>退出(&amp;X)</value>
+  </data>
+  <data name="btn_file" xml:space="preserve">
+    <value>文件(&amp;F)</value>
+  </data>
+  <data name="full_screen" xml:space="preserve">
+    <value>全画面</value>
+  </data>
+  <data name="btn_help" xml:space="preserve">
+    <value>帮助(&amp;H)</value>
+  </data>
+  <data name="btn_homepage" xml:space="preserve">
+    <value>主页(&amp;H)...</value>
+  </data>
+  <data name="btn_image" xml:space="preserve">
+    <value>图片(&amp;I)</value>
+  </data>
+  <data name="btn_image_editor" xml:space="preserve">
+    <value>图片编辑器(&amp;E)...</value>
+  </data>
+  <data name="btn_new" xml:space="preserve">
+    <value>新图片(&amp;N)</value>
+  </data>
+  <data name="btn_next" xml:space="preserve">
+    <value>下一个(&amp;N)</value>
+  </data>
+  <data name="btn_ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="btn_open" xml:space="preserve">
+    <value>打开(&amp;O)...</value>
+  </data>
+  <data name="btn_paste" xml:space="preserve">
+    <value>粘贴(&amp;P)</value>
+  </data>
+  <data name="btn_redo" xml:space="preserve">
+    <value>重做(&amp;R)</value>
+  </data>
+  <data name="btn_reset_region" xml:space="preserve">
+    <value>重新选择(&amp;R)</value>
+  </data>
+  <data name="btn_run_on_windows_starts" xml:space="preserve">
+    <value>Windows 启动时自动运行 JustCapture(&amp;R)</value>
+  </data>
+  <data name="btn_save" xml:space="preserve">
+    <value>保存(&amp;S)</value>
+  </data>
+  <data name="btn_save_last_picture" xml:space="preserve">
+    <value>保存最后的快照(&amp;S)...</value>
+  </data>
+  <data name="btn_select" xml:space="preserve">
+    <value>选择(&amp;S)</value>
+  </data>
+  <data name="btn_select_all" xml:space="preserve">
+    <value>选择全部(&amp;A)</value>
+  </data>
+  <data name="btn_select_window" xml:space="preserve">
+    <value>选择窗口(&amp;W)</value>
+  </data>
+  <data name="btn_settings" xml:space="preserve">
+    <value>设定(&amp;S)...</value>
+  </data>
+  <data name="btn_shadow" xml:space="preserve">
+    <value>阴影(&amp;S)</value>
+  </data>
+  <data name="btn_show_toolbar" xml:space="preserve">
+    <value>表示工具栏(&amp;T)</value>
+  </data>
+  <data name="btn_show_toolbar_in_capture_tool" xml:space="preserve">
+    <value>在捕捉工具画面上表示工具栏(&amp;T)</value>
+  </data>
+  <data name="btn_skip" xml:space="preserve">
+    <value>跳过(&amp;S)</value>
+  </data>
+  <data name="btn_undo" xml:space="preserve">
+    <value>恢复(&amp;U)</value>
+  </data>
+  <data name="cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="capture_tool" xml:space="preserve">
+    <value>捕捉工具</value>
+  </data>
+  <data name="copy" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="cut" xml:space="preserve">
+    <value>剪切</value>
+  </data>
+  <data name="btn_do_not_show_again" xml:space="preserve">
+    <value>下次不表示(&amp;D)</value>
+  </data>
+  <data name="edit" xml:space="preserve">
+    <value>编辑</value>
+  </data>
+  <data name="general" xml:space="preserve">
+    <value>一般</value>
+  </data>
+  <data name="hotkeys_custom_tip" xml:space="preserve">
+    <value>选择希望使用的动作。或为每个动作设定快捷键。要设定快捷键，请在后面的输入框中按下快捷键的组合。</value>
+  </data>
+  <data name="incorrect_format" xml:space="preserve">
+    <value>无法打开图片。文件格式可能损坏。</value>
+  </data>
+  <data name="btn_inner_line" xml:space="preserve">
+    <value>内线(&amp;I):</value>
+  </data>
+  <data name="line" xml:space="preserve">
+    <value>线</value>
+  </data>
+  <data name="new_image" xml:space="preserve">
+    <value>新图片</value>
+  </data>
+  <data name="new_version_notify" xml:space="preserve">
+    <value>{0} 有了新版本 {1} ！请从下面的地址获取并安装。</value>
+  </data>
+  <data name="not_enough_permission" xml:space="preserve">
+    <value>处理权限不够。请使用管理员(Administrator)启动 JustCapture。</value>
+  </data>
+  <data name="no_new_version" xml:space="preserve">
+    <value>正在使用的 {0} 是最新版。</value>
+  </data>
+  <data name="no_picture_captured" xml:space="preserve">
+    <value>没有捕捉的快照，请先进行快照。</value>
+  </data>
+  <data name="open_image" xml:space="preserve">
+    <value>打开图片</value>
+  </data>
+  <data name="btn_outer_line" xml:space="preserve">
+    <value>外线(&amp;O):</value>
+  </data>
+  <data name="paste" xml:space="preserve">
+    <value>粘贴</value>
+  </data>
+  <data name="rectangle" xml:space="preserve">
+    <value>长方形</value>
+  </data>
+  <data name="redo" xml:space="preserve">
+    <value>重做</value>
+  </data>
+  <data name="region_selection" xml:space="preserve">
+    <value>选择范围</value>
+  </data>
+  <data name="save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="save_image" xml:space="preserve">
+    <value>保存图片</value>
+  </data>
+  <data name="select_region" xml:space="preserve">
+    <value>选择范围</value>
+  </data>
+  <data name="settings" xml:space="preserve">
+    <value>设定</value>
+  </data>
+  <data name="shortcut_keys" xml:space="preserve">
+    <value>快捷键</value>
+  </data>
+  <data name="snapshot" xml:space="preserve">
+    <value>快照</value>
+  </data>
+  <data name="start_up" xml:space="preserve">
+    <value>启动</value>
+  </data>
+  <data name="tips_hotkey" xml:space="preserve">
+    <value>任何时候，使用快捷键可以迅速捕捉屏幕的快照。您也可以在设定画面为捕捉动作设定不同的快捷键。</value>
+  </data>
+  <data name="tips_select_window" xml:space="preserve">
+    <value>您可以随时选择一个桌面的窗口进行快照。未选择的部分不会被快照下来。</value>
+  </data>
+  <data name="tips_start_slides" xml:space="preserve">
+    <value>希望观看一个 {0} 的功能介绍吗？</value>
+  </data>
+  <data name="tips_tray" xml:space="preserve">
+    <value>JustCapture 启动后将在系统托盘里添加一个图标。在图标上点击右键，可以调出 JustCapture 的主菜单。</value>
+  </data>
+  <data name="undo" xml:space="preserve">
+    <value>恢复</value>
+  </data>
+  <data name="btn_thumb" xml:space="preserve">
+    <value>移动点(&amp;T):</value>
+  </data>
+  <data name="btn_language" xml:space="preserve">
+    <value>表示语言(&amp;L):</value>
+  </data>
+  <data name="select_window" xml:space="preserve">
+    <value>选择窗口</value>
+  </data>
+  <data name="btn_full_screen" xml:space="preserve">
+    <value>全画面(&amp;F)</value>
+  </data>
+  <data name="reset_region" xml:space="preserve">
+    <value>重新选择</value>
+  </data>
+  <data name="btn_capture" xml:space="preserve">
+    <value>快照(&amp;S)</value>
+  </data>
+  <data name="capture" xml:space="preserve">
+    <value>快照</value>
+  </data>
+  <data name="action_capture_and_edit_free_region" xml:space="preserve">
+    <value>在画面上选择一个范围快照并编辑</value>
+  </data>
+  <data name="action_capture_and_save_free_region" xml:space="preserve">
+    <value>在画面上选择一个范围快照并保存</value>
+  </data>
+  <data name="action_free_region" xml:space="preserve">
+    <value>自由选择一个范围进行快照</value>
+  </data>
+  <data name="action_image_editor" xml:space="preserve">
+    <value>图片编辑器</value>
+  </data>
+  <data name="action_mail_last_captured_picture" xml:space="preserve">
+    <value>使用电子邮件发送最后的快照</value>
+  </data>
+  <data name="action_save_last_captured_picture" xml:space="preserve">
+    <value>将最后的快照保存到文件</value>
+  </data>
+  <data name="action_select_window" xml:space="preserve">
+    <value>选择一个窗口进行快照</value>
+  </data>
+  <data name="captured_image" xml:space="preserve">
+    <value>捕捉到的图片</value>
+  </data>
+  <data name="check_for_updates" xml:space="preserve">
+    <value>检查更新</value>
+  </data>
+  <data name="new_version_available" xml:space="preserve">
+    <value>新版本可用</value>
+  </data>
+  <data name="btn_tools" xml:space="preserve">
+    <value>工具(&amp;T)</value>
+  </data>
+  <data name="image_editor" xml:space="preserve">
+    <value>图片编辑器</value>
+  </data>
+  <data name="btn_capture_to_clipboard" xml:space="preserve">
+    <value>捕捉到剪贴板</value>
+  </data>
+  <data name="btn_more" xml:space="preserve">
+    <value>更多...</value>
+  </data>
+  <data name="no_color" xml:space="preserve">
+    <value>无色</value>
+  </data>
+  <data name="btn_capture_current_full_screen" xml:space="preserve">
+    <value>取得全屏快照(&amp;F)</value>
+  </data>
+  <data name="btn_start_tips" xml:space="preserve">
+    <value>友情提示(&amp;T)...</value>
+  </data>
+  <data name="btn_enable_check_for_updates" xml:space="preserve">
+    <value>软件启动时检测新版本（推荐）</value>
+  </data>
+  <data name="btn_restore_last_region" xml:space="preserve">
+    <value>记住最后一次捕捉的范围(&amp;R)</value>
+  </data>
+  <data name="btn_add_number" xml:space="preserve">
+    <value>添加序号(&amp;N)</value>
+  </data>
+  <data name="btn_draw_ellipse" xml:space="preserve">
+    <value>添加圆(&amp;E)</value>
+  </data>
+  <data name="show_shadow" xml:space="preserve">
+    <value>添加图形的阴影</value>
+  </data>
+  <data name="btn_reset_number" xml:space="preserve">
+    <value>重置序号为1(&amp;W)</value>
+  </data>
+  <data name="reset_number" xml:space="preserve">
+    <value>重置序号为1</value>
+  </data>
+  <data name="tips_changenumber" xml:space="preserve">
+    <value>序号被追加后会自动递增。如果希望改变现在的序号，请按０－９的数字键。如果想将序号重新设置为１，也可使用工具栏的“重置序号为１”按钮。</value>
+  </data>
+  <data name="action_capture_full_screen_into_clipboard" xml:space="preserve">
+    <value>捕捉全画面并保存到剪贴板</value>
+  </data>
+  <data name="capture_free_region" xml:space="preserve">
+    <value>自由范围快照</value>
+  </data>
+  <data name="capture_full_screen" xml:space="preserve">
+    <value>取得全屏快照</value>
+  </data>
+  <data name="edit_text" xml:space="preserve">
+    <value>编辑文字</value>
+  </data>
+  <data name="btn_resize_image" xml:space="preserve">
+    <value>设置图像大小(&amp;R)...</value>
+  </data>
+  <data name="resize_image" xml:space="preserve">
+    <value>设置图像大小</value>
+  </data>
+  <data name="rotate_90ccw" xml:space="preserve">
+    <value>顺时针旋转90度</value>
+  </data>
+  <data name="rotate_90cw" xml:space="preserve">
+    <value>逆时针旋转90度</value>
+  </data>
+  <data name="lab_start_operation" xml:space="preserve">
+    <value>启动操作(&amp;O):</value>
+  </data>
+  <data name="so_image_editor" xml:space="preserve">
+    <value>运行图片编辑器</value>
+  </data>
+  <data name="so_start_capture" xml:space="preserve">
+    <value>开始截图</value>
+  </data>
+  <data name="so_tray" xml:space="preserve">
+    <value>启动后台进程（系统托盘）</value>
+  </data>
+  <data name="btn_scale" xml:space="preserve">
+    <value>缩放(&amp;S)...</value>
+  </data>
+  <data name="scale" xml:space="preserve">
+    <value>缩放</value>
+  </data>
+  <data name="save_changes_confirm" xml:space="preserve">
+    <value>保存变更到[{0}]文件吗？</value>
+  </data>
+  <data name="btn_save_as" xml:space="preserve">
+    <value>另存为(&amp;A)...</value>
+  </data>
+  <data name="save_as" xml:space="preserve">
+    <value>保存到新文件</value>
+  </data>
+  <data name="generic" xml:space="preserve">
+    <value>通常</value>
+  </data>
+  <data name="lab_unit" xml:space="preserve">
+    <value>单位(&amp;U):</value>
+  </data>
+  <data name="percent" xml:space="preserve">
+    <value>百分比</value>
+  </data>
+  <data name="pixel" xml:space="preserve">
+    <value>像素</value>
+  </data>
+  <data name="btn_lock_aspect_ratio" xml:space="preserve">
+    <value>保持高宽比</value>
+  </data>
+  <data name="lab_height" xml:space="preserve">
+    <value>高(&amp;H):</value>
+  </data>
+  <data name="lab_width" xml:space="preserve">
+    <value>宽(&amp;W):</value>
+  </data>
+  <data name="scale_image" xml:space="preserve">
+    <value>图片缩放</value>
+  </data>
+  <data name="size" xml:space="preserve">
+    <value>大小</value>
+  </data>
+  <data name="btn_status_Bar" xml:space="preserve">
+    <value>状态栏(&amp;S)</value>
+  </data>
+  <data name="btn_toolbar" xml:space="preserve">
+    <value>工具栏(&amp;T)</value>
+  </data>
+  <data name="btn_view" xml:space="preserve">
+    <value>表示(&amp;V)</value>
+  </data>
+  <data name="chk_show_coordinate_info" xml:space="preserve">
+    <value>显示坐标情报(&amp;C)</value>
+  </data>
+  <data name="view" xml:space="preserve">
+    <value>表示</value>
+  </data>
+  <data name="untitled" xml:space="preserve">
+    <value>未命名</value>
+  </data>
+  <data name="btn_add_text" xml:space="preserve">
+    <value>添加文本(&amp;T)</value>
+  </data>
+  <data name="lab_magnifier_scale" xml:space="preserve">
+    <value>放大镜的倍率(&amp;M)</value>
+  </data>
+  <data name="lab_no_magnifier_scale" xml:space="preserve">
+    <value>禁用</value>
+  </data>
+  <data name="bold" xml:space="preserve">
+    <value>粗体</value>
+  </data>
+  <data name="italic" xml:space="preserve">
+    <value>斜体</value>
+  </data>
+  <data name="strikethrough" xml:space="preserve">
+    <value>删除线</value>
+  </data>
+  <data name="text_larger" xml:space="preserve">
+    <value>放大字体</value>
+  </data>
+  <data name="text_smaller" xml:space="preserve">
+    <value>缩小字体</value>
+  </data>
+  <data name="underline" xml:space="preserve">
+    <value>下划线</value>
+  </data>
+  <data name="btn_print" xml:space="preserve">
+    <value>打印(&amp;P)</value>
+  </data>
+  <data name="print" xml:space="preserve">
+    <value>打印</value>
+  </data>
+  <data name="btn_print_last_picture" xml:space="preserve">
+    <value>打印最后的快照(&amp;P)</value>
+  </data>
+</root>
