@@ -6,19 +6,19 @@ Screen snapshot capture tool written in C# for Windows
 
 On-screen range select and capture
 
-![range select and capture](https://www.unvell.com/wp-content/uploads/2015/07/free_region_en.png)
+![range select and capture](snapshots/free_region_en.png)
 
 One click to select a foreground window
 
-![window select and capture](https://www.unvell.com/wp-content/uploads/2015/07/select_window_en.png)
+![window select and capture](snapshots/select_window_en.png)
 
 Built-in image editor after capture
 
-![image editor](https://www.unvell.com/wp-content/uploads/2015/07/editor_s.png)
+![image editor](snapshots/editor_s.png)
 
 Customizable hotkeys
 
-![customizable hotkeys](https://www.unvell.com/wp-content/uploads/2015/07/hotkey_s.png)
+![customizable hotkeys](snapshots/hotkey_s.png)
 
 # How to use
 
