@@ -6,19 +6,19 @@ Screen snapshot capture tool written in C# for Windows
 
 On-screen range select and capture
 
-![range select and capture](snapshots/free_region_en.png)
+![range select and capture](Snapshots/free_region_en.png)
 
 One click to select a foreground window
 
-![window select and capture](snapshots/select_window_en.png)
+![window select and capture](Snapshots/select_window_en.png)
 
 Built-in image editor after capture
 
-![image editor](snapshots/editor_s.png)
+![image editor](Snapshots/editor_s.png)
 
 Customizable hotkeys
 
-![customizable hotkeys](snapshots/hotkey_s.png)
+![customizable hotkeys](Snapshots/hotkey_s.png)
 
 # How to use
 
