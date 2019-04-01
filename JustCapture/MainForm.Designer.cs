@@ -102,6 +102,7 @@
 			// 
 			// smartScanToolStripMenuItem
 			// 
+			this.smartScanToolStripMenuItem.Image = global::unvell.JustCapture.Properties.Resources.SetHotSpotTool_221_32;
 			this.smartScanToolStripMenuItem.Name = "smartScanToolStripMenuItem";
 			this.smartScanToolStripMenuItem.Size = new System.Drawing.Size(460, 34);
 			this.smartScanToolStripMenuItem.Text = "Smart Scan";
