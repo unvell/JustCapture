@@ -194,15 +194,6 @@ namespace unvell.JustCapture
 			{
 				notifyIcon1.Visible = false;
 			}
-
-			// version check
-#if !DEBUG
-			if (ConfigurationManager.Instance.IsCurrentUserSetting(UserConfigKey.User_EnableCheckForUpdates, true))
-			{
-				CheckNewVersion(false);
-			}
-#endif
-
 		}
 
 		protected override void OnClosing(CancelEventArgs e)
