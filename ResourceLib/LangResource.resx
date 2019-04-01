@@ -407,7 +407,7 @@ Click here to download the latest version.</value>
     <value>Image Editor</value>
   </data>
   <data name="btn_capture_to_clipboard" xml:space="preserve">
-    <value>Capture to clipboard</value>
+    <value>&amp;Copy</value>
   </data>
   <data name="btn_more" xml:space="preserve">
     <value>More...</value>
