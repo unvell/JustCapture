@@ -5,6 +5,7 @@
  * - commonly be used as toolstrip button to let user pick a color quickly
  *   
  * Copyright © 2012 UNVELL All rights reserved.
+ * Copyright (c) 2019 Jingwood, all rights reserved.
  *
  ****************************************************************************/
 

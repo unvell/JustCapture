@@ -2,6 +2,7 @@
  * UNVELL VisualTouch
  * 
  * COPYRIGHT(C) 2011 UNVELL ALL RIGHTS RESERVED
+ * Copyright (c) 2019 Jingwood, all rights reserved.
  * 
  *****************************************************************/
 

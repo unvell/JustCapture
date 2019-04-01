@@ -1,3 +1,14 @@
+/*****************************************************************************
+ * 
+ * JustCapture
+ * https://github.com/unvell/JustCapture
+ * 
+ * MIT License
+ * 
+ * Copyright(c) 2010-2019 Jingwood, all rights reserved.
+ * 
+ ****************************************************************************/
+
 using System;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;

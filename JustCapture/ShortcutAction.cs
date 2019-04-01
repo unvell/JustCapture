@@ -1,4 +1,15 @@
-﻿using System;
+﻿/*****************************************************************************
+ * 
+ * JustCapture
+ * https://github.com/unvell/JustCapture
+ * 
+ * MIT License
+ * 
+ * Copyright(c) 2010-2019 Jingwood, all rights reserved.
+ * 
+ ****************************************************************************/
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Forms;
@@ -361,7 +372,6 @@ namespace unvell.JustCapture
 			get { return LangResource.action_image_editor; }
 		}
 	}
-
 
 	class MailLastPictureAction : ShortcutAction
 	{

@@ -2,6 +2,7 @@
  * Common Graphics Toolkit
  * 
  * Copyright © 2012 UNVELL All rights reserved
+ * Copyright (c) 2019 Jingwood, all rights reserved.
  *
  ****************************************************************************/
 

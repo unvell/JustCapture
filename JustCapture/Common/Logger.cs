@@ -16,6 +16,7 @@
  * PURPOSE.
  *
  * Copyright (c) 2012-2018 unvell.com, all rights reserved.
+ * Copyright (c) 2019 Jingwood, all rights reserved.
  *
  ****************************************************************************/
 

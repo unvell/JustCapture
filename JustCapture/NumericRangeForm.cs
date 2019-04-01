@@ -1,9 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿/*****************************************************************************
+ * 
+ * JustCapture
+ * https://github.com/unvell/JustCapture
+ * 
+ * MIT License
+ * 
+ * Copyright(c) 2010-2019 Jingwood, all rights reserved.
+ * 
+ ****************************************************************************/
+
+using System;
 using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 
 namespace unvell.JustCapture
