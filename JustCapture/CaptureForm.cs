@@ -480,32 +480,37 @@ namespace unvell.JustCapture
 			Show();
 			Focus();
 
-			if (InitCaptureMethod == CaptureMode.FreeRegion)
+			switch (InitCaptureMethod)
 			{
-				operation = Operation.RangeSelection;
+				case CaptureMode.FreeRegion:
+					operation = Operation.RangeSelection;
 
-				// if user do not want to remember last region, we hide the selection
-				if (!ConfigurationManager.Instance.IsCurrentUserSetting(UserConfigKey.User_RestoreLastSelectRegion, true)
+					// if user do not want to remember last region, we hide the selection
+					if (!ConfigurationManager.Instance.IsCurrentUserSetting(UserConfigKey.User_RestoreLastSelectRegion, true)
+						// or do not remember the last selection what capture full screen,
+						// full screen selection can not select a range so user may worries about this
+						|| (Selection == currentScreen.Bounds))
+					{
+						// clear selection
+						selection = Rectangle.Empty;
 
-					// or do not remember the last selection what capture full screen,
-					// full screen selection can not select a range so user may worries about this
-					|| (Selection == currentScreen.Bounds))
-				{
-					// clear selection
-					selection = Rectangle.Empty;
+						// hide toolbar 
+						toolbarPanel.Visible = false;
+					}
+					break;
 
-					// hide toolbar 
-					toolbarPanel.Visible = false;
-				}
-			}
-			else if (InitCaptureMethod == CaptureMode.SelectWindow)
-			{
-				StartSelectWindow();
-			}
-			else if (InitCaptureMethod == CaptureMode.GetScrollContent)
-			{
-				StartSelectWindow();
-				operation = Operation.FindControl;
+				case CaptureMode.SelectWindow:
+					StartSelectWindow();
+					break;
+
+				case CaptureMode.GetScrollContent:
+					StartSelectWindow();
+					operation = Operation.FindControl;
+					break;
+
+				case CaptureMode.SmartScan:
+					StartAutoScan();
+					break;
 			}
 
 			if (WorkMode == WorkMode.AutoCapture)
