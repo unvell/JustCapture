@@ -14,13 +14,13 @@ using System.Windows.Forms;
 
 using unvell.JustCapture.XML;
 using unvell.JustCapture.Toolkits;
+using unvell.Common;
 
 namespace unvell.JustCapture
 {
 	internal class ConfigurationManager
 	{
-		private static readonly ConfigurationManager instance = new ConfigurationManager();
-		public static ConfigurationManager Instance { get { return instance; } }
+		public static ConfigurationManager Instance { get; } = new ConfigurationManager();
 
 		internal string GetUserConfigFileName()
 		{
@@ -28,6 +28,7 @@ namespace unvell.JustCapture
 				Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
 				"unvell\\" + Application.ProductName), "user-settings.xml");
 		}
+
 		private Configuration currentUserConfig;
 
 		internal Configuration GetCurrentUserConfiguration()
@@ -51,7 +52,7 @@ namespace unvell.JustCapture
 							ShortcutKeyToolkit.KeysToString(action.ShortcutKeys), action.Activated);
 					}
 
-					//Logger.Log("config", "user config not exists, new config created in memory.");
+					Logger.Log("config", "user config not exists, new config created in memory.");
 				}
 				else
 				{
@@ -64,12 +65,15 @@ namespace unvell.JustCapture
 							currentUserConfig.UserData = serializer.Deserialize(fs) as UserData;
 						}
 					}
-					catch (Exception)
+					catch (Exception ex)
 					{
-						//Logger.Log("config", "load user config failed: " + ex.Message);
+						Logger.Log("config", "load user config failed: " + ex.Message);
 					}
+
 					if (currentUserConfig.UserData == null)
+					{
 						currentUserConfig.UserData = new UserData();
+					}
 				}
 			}
 
@@ -117,7 +121,7 @@ namespace unvell.JustCapture
 			Configuration config = GetCurrentUserConfiguration();
 			if (config == null)
 			{
-				//Logger.Log("config", "current user config is null.");
+				Logger.Log("config", "current user config is null.");
 				return;
 			}
 			else
@@ -148,12 +152,15 @@ namespace unvell.JustCapture
 			try
 			{
 				using (FileStream fs = new FileStream(filename, FileMode.Create))
+				{
 					serializer.Serialize(fs, config.UserData);
-				//Logger.Log("config", "user data saved");
+				}
+
+				Logger.Log("config", "user data saved");
 			}
-			catch (Exception)
+			catch (Exception ex)
 			{
-				//Logger.Log("config", "save user data failed:" + ex.Message);
+				Logger.Log("config", "save user data failed:" + ex.Message);
 			}
 
 			config.Dirty = false;
